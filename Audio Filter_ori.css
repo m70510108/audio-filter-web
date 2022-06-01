@@ -1,0 +1,42 @@
+button.a {
+    font-size: 24px;
+    border: 0;
+    background-color: rgb(219,112,147);
+    color: rgb(253, 245, 230);
+    border-radius: 10px;
+}
+
+body{
+    background-color:rgb(253, 245, 230);
+}
+button.a:hover{
+        font-size: 24px;
+        border: solid rgb(219,112,147);
+        background-color: rgb(253, 245, 230);
+        color: rgb(219,112,147);
+        border-radius: 10px;
+}
+
+.container{
+    width: 1000px;
+    height: 250px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(219,112,147);
+    font-size: 3cm;
+    font-weight: bolder;
+}
+
+.container2{
+    width: 700px;
+    height: 200px;
+    margin: 0 left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

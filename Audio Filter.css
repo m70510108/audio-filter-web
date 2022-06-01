@@ -1,0 +1,43 @@
+label.a {
+    font-size: 24px;
+    border: 0;
+    background-color: rgb(247,149,166);
+    color: rgb(255, 250, 229);
+    border-radius: 10px;
+}
+
+body{
+    background-color:rgb(255, 250, 229);
+}
+label.a:hover{
+        font-size: 24px;
+        border: solid rgb(247,149,166);
+        background-color: rgb(255, 250, 229);
+        color: rgb(247,149,166);
+        border-radius: 10px;
+}
+
+.container{
+    width: 1000px;
+    height: 250px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: rgb(247,149,166);
+    font-size: 3cm;
+    font-weight: bolder;
+}
+
+.container2{
+    
+    width: 700px;
+    height: 200px;
+    margin: 0 left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

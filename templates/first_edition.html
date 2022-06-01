@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Filter</title>
+</head>
+<figure>
+     <img src="https://lh4.googleusercontent.com/oTs2oaGfIUjWZGbYl1BwKoFYwsSsNZUH2URiwtUy8SYsXycY72CUgrsGmrEZSjoUHFFMl_FScRTm1dUn4lHh0zo=w1280" alt="Logo" align="left" width="90" height="90"/>
+</figure>
+<body bgcolor='#FBF5D5' text='#7D7967' >
+    <h1> <center>Welcome to Audio Filter!!!</center> </h1>
+    <!--label> Choose the File to upload: </label>
+        <input type="file" id="myFile" /> <br /><br /> 
+        <input type="submit" value="submit" /-->
+        <!--label for="audioFileChooser">Upload an audio file: </label><br><br>
+        <input  id="audioFileChooser" type="file" onchange="readFile(this.files);"-->
+        
+        <script>
+            input.onchange = function(e){
+                var sound = document.getElementById('sound');
+                sound.src = URL.createObjectURL(this.files[0]);
+                // not really needed in this exact case, but since it is really important in other cases,
+                // don't forget to revoke the blobURI when you don't need it
+                sound.onend = function(e) {
+                URL.revokeObjectURL(this.src);
+                }
+            }
+        </script>
+        <input type="file" id="input" name="file" accept=".mp3"/>
+        
+        <audio id="sound" controls >
+            <source src="sound.src" type="audio/mpeg" controls="true" style="width: 512px">
+        </audio>
+
+        
+</body>
+</html>
+
