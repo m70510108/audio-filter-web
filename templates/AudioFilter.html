@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Audio Filter</title>
-        <link rel="stylesheet" href="Audio Filter.css">
+        <link rel="stylesheet" href="/static/Audio Filter.css">
     </head>
     <body>
         <div class="container">
@@ -19,8 +19,9 @@
 
         <div class="container2">
 
-            <button class="a" type="button" style="width:200px; height:50px;"><b>上傳音檔</b></button>
-
+            <!--button class="a" type="button" style="width:200px; height:50px;"><b>上傳音檔</b></button-->
+            <input type="file" id="actual-btn" hidden/>
+            <label for "actual-btn">上傳檔案</label>
         </div>
 
         <div class="container2">
@@ -34,6 +35,35 @@
             <button class="a" type="button" style="width:200px; height:50px;"><b>下載音檔</b></button>
             
         </div>
+
+        <div class="audio-container">
+        <div class="audio"></div>
+        <div class = "buttons">
+
+             <span class="play-btn btn">
+                <i class="fa-solid fa-circle-play"></i>
+                <i class="fa-solid fa-circle-pause"></i>
+             </span>
+
+             <span class="'stop-btn btn">
+                <i class="fa-solid fa-circle-stop"></i>
+             </span>
+
+             <span class="mute-btn btn">
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-xmark"></i>
+             </span>
+
+             <input type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0.5"
+              class="volume-slider" />
+            </div>
+        </div>
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+        <script src="main.js"></script>
 
 
 

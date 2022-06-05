@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Audio Filter</title>
-        <link rel="stylesheet" href="Audio Filter.css">
+        <link rel="stylesheet" href="/static/Audio Filter.css">
     </head>
     <body>
         <div class="container">
@@ -21,7 +21,7 @@
 
             <form action="file:///D:/%E5%A4%A7%E5%AD%B8/%E4%B8%89%E4%B8%8B/%E6%9E%B6%E7%B6%B2/%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99%E6%AA%94%E6%A1%88/Audio%20Intro.html">
 
-            <button class="b" type="submit" style="width:300px; height:150px;"><b>網站簡介</b></button>
+            <button class="b" type="submit"  onclick="window.location.href='/AudioIntro.html'" style="width:300px; height:150px;"><b>網站簡介</b></button>
 
             </form>
         
@@ -29,11 +29,13 @@
 
         <div class="container4">
 
-            <form action="file:///D:/%E5%A4%A7%E5%AD%B8/%E4%B8%89%E4%B8%8B/%E6%9E%B6%E7%B6%B2/%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99%E6%AA%94%E6%A1%88/Audio%20Process.html">
+            
+            <form method="GET" action="AudioProcess.html">
 
             <button class="b" type="submit" style="width:300px; height:150px;"><b>使用方法</b></button>
 
             </form>
+            
         
         </div>
 
@@ -41,7 +43,7 @@
 
             <form action="file:///D:/%E5%A4%A7%E5%AD%B8/%E4%B8%89%E4%B8%8B/%E6%9E%B6%E7%B6%B2/%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99%E6%AA%94%E6%A1%88/Audio%20Filter.html">
 
-                <button class="b" type="submit" style="width:300px; height:150px;"><b>聲音過濾</b></button>
+                <button class="b" type="submit" onclick="window.location.href='/AudioFilter'" style="width:300px; height:150px;"><b>聲音過濾</b></button>
                 
             </form>
 
